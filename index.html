@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS External -->
+     <link rel="stylesheet" href="css\style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Header Content -->
+    <header class="main-header pb-[4px]">
+        <!-- Icon -->
+        <div class="logo"></div>
+        
+        <!-- NavBar -->
+        <nav class="flex">
+
+            <a href="home-page" class="border p-[4px]">Home</a>
+            <a href="our-profile" class="border p-[4px]">Our Profile</a>
+            <a href="message-us" class="border p-[4px]">Message Us</a>
+        </nav>
+    </header>
+           
+    
+    <hr />
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home -->
+        <section id="home-page" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[8px]">
+                    Welcome <span id="username"></span> to our website
+                </h2>
+            </header>
+        </section>
+    <hr />
+        <!-- Our Profile -->
+        <section id="our-profile" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[8px]">
+                    Our Profile
+                </h2>
+            </header>
+        </section>
+    <hr />
+        <!-- Message Us -->
+        <section id="message-us" class="min-h-[500px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[8px]">
+                    Message Us
+                </h2>
+            </header>   
+
+            <form class="px-[16px]">
+                <label for="name-input" class="block py-[8px]">
+                    Name:
+                    <input type="text" id="name-input" class="border p-[4px] w-full" required>
+                </label>
+                
+                <button type="button" onclick="validateform();" class="border p-[4px] mt-[8px] ">
+                    Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center"></footer>
+
+    <!-- JS External -->
+    <script src="js\script.js"></script>
+
+</body>
+</html>
